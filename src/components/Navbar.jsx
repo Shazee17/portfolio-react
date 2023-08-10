@@ -42,7 +42,7 @@ const Navbar = () => {
       </ul>
 
       {/* Socials */}
-      <div className="hidden lg:flex fixed flex-col left-0 top-[35%]">
+      <div className="hidden lg:flex fixed flex-col left-0 top-[65%]">
         <ul>
           <li className="px-4 w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#12111c] rounded-sm font-medium">
             <a href="/" className="flex justify-between items-center w-full text-gray-300">
