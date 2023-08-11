@@ -10,10 +10,10 @@ const Home = () => {
         <h1 className="text-4xl sm:text-7xl font-bold text-[#b3b3b3]">
           Shah Zaman
         </h1>
-        <h2 className="text-4xl sm:text-7xl font-bold text-[#7a7a7a]">
+        <h2 className="text-4xl sm:text-7xl font-bold text-[#7a7a7a] hover:text-gray-200 duration-300 cursor-pointer">
           I'm a Front-End Developer.
         </h2>
-        <p className="text-[#7a7a7a] py-4 max-w-[700px]">
+        <p className="text-[#7a7a7a] py-4 max-w-[700px] hover:text-gray-200 duration-300 cursor-pointer">
           I'm specializing in building (and occasionally designing) exceptional
           digital experiences. Currently, I’m focused on building responsive
           full-stack web applications.
