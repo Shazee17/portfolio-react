@@ -1,18 +1,35 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import {
-  FaBars,FaTimes,FaGithub,FaLinkedin, FaInstagram
+  FaBars, FaTimes, FaGithub, FaLinkedin, FaInstagram
 } from "react-icons/fa";
 import { HiOutlineMail } from 'react-icons/hi';
 import { BsFillPersonLinesFill } from 'react-icons/bs';
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  const handleScroll = () => {
+    if (window.scrollY > 0) {
+      setIsScrolled(true);
+    } else {
+      setIsScrolled(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   const handleClick = () => {
     setNav(!nav);
   };
 
   return (
-    <div className="fixed w-full h-[80px] flex justify-center items-center px-8b #0d0e14 text-gray-300 classN">
+    <div className={`fixed w-full h-[80px] flex justify-center items-center px-8 #0d0e14 text-gray-300 ${isScrolled ? 'scrolled' : ''}`}>
       <ul className="hidden md:flex">
         <li>Home</li>
         <li>About</li>
