@@ -14,7 +14,7 @@ const About = () => {
         </div>
         <div className="max-w-[1000px] w-full grid px-8 sm:grid-cols-2 gap-8">
           <div>
-            <p className="sm:text-right text-4xl font-bold"> 
+            <p className="sm:text-right text-4xl font-bold text-[#7a7a7a] hover:text-gray-200 duration-300"> 
               Hi, I'm <span className="text-orange-500">Shahzaman</span>, lovely to meet you. Please take a look around.
             </p>
           </div>

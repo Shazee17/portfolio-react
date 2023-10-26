@@ -4,10 +4,9 @@ import Home from "./components/Home";
 import About from "./components/About";
 import Skills from "./components/Skills";
 import AnimatedCursor from "react-animated-cursor";
+import Work from "./components/Work";
 
 const App = () => {
-  const cursorColor = "orange";
-
   return (
     <div>
       <AnimatedCursor
@@ -18,7 +17,7 @@ const App = () => {
         outerAlpha={0}
         hasBlendMode={true}
         innerStyle={{
-          backgroundColor: cursorColor,
+          backgroundColor: "orange",
         }}
         outerStyle={{
           border: `3px solid white`, 
@@ -28,6 +27,7 @@ const App = () => {
       <Home />
       <About />
       <Skills />
+      <Work />
     </div>
   );
 };
