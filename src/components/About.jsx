@@ -18,8 +18,14 @@ const About = () => {
               <span className="text-orange-500">2020 - 2024</span>
             </p>
           </div>
-          <div>
-          I am a full-stack developer with two years of experience in both frontend and backend technologies, as well as database development. I specialize in building dynamic and efficient web applications, with a focus on creating seamless user experiences. Additionally, I have a growing expertise in AI prompt engineering, generative AI, and large language models (LLMs), along with some experience in LangChain JS for advanced AI-driven solutions.
+          <div className="text-lg">
+          I am a full-stack developer with two years of experience in both frontend and backend technologies, as well as database development. I specialize in building dynamic and efficient web applications, with a focus on creating seamless user experiences. Currently, I am focusing on AI prompt engineering, generative AI, and large language models (LLMs), along with in LangChain JS for advanced AI-driven solutions.
+
+          <br/>
+          <br/>
+          Additionally, I do art in my free time. Might as well <span className="text-orange-500
+          "><a href="https://www.instagram.com/shazeeu">check it out</a></span> if you're interested :)
+          
           </div>
         </div>
       </div>

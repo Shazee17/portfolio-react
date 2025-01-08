@@ -10,7 +10,6 @@ const socials = [
 
   {name: "Linkedin", url: "https://www.linkedin.com/in/shahzaman-abbasi/", icon: FaLinkedin},
   {name: "Github", url: "https://github.com/Shazee17", icon: FaGithub},
-  {name: "Email", url: "/", icon: HiOutlineMail},
 
 ]
 
