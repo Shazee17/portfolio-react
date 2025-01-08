@@ -5,6 +5,17 @@ import {
 import { HiOutlineMail } from 'react-icons/hi';
 import {Link} from "react-scroll"
 
+
+const socials = [
+
+  {name: "Linkedin", url: "https://www.linkedin.com/in/shahzaman-abbasi/", icon: FaLinkedin},
+  {name: "Github", url: "https://github.com/Shazee17", icon: FaGithub},
+  {name: "Email", url: "/", icon: HiOutlineMail},
+
+]
+
+
+
 const Navbar = () => {
   const [nav, setNav] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
@@ -29,7 +40,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className={`bg-[#0d0e18] fixed w-full h-[80px] flex justify-center items-center px-8 #0d0e14 text-gray-300 ${isScrolled ? 'scrolled' : ''}`}>
+    <div className={`bg-[#0d0e18] fixed w-full h-[80px] border-b-[1px] border-orange-500 flex justify-center items-center px-8 #0d0e14 text-gray-300 ${isScrolled ? 'scrolled' : ''}`}>
       <ul className="hidden md:flex">
         <li className="hover:text-orange-500">
           <Link to='home' smooth={true} duration={500}>Home</Link>
@@ -63,23 +74,20 @@ const Navbar = () => {
       {/* Socials */}
       <div className="hidden lg:flex fixed flex-col left-0 top-[65%]">
         <ul>
-          <li className="px-4 w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#12111c] rounded-sm font-medium">
-            <a href="https://www.linkedin.com/in/shahzaman-abbasi/" className="flex justify-between items-center w-full text-gray-300">
-              Linkedin <FaLinkedin size={30}/>
-            </a>
-          </li>
+          {socials.map((social, index) => {
+                const Icon = social.icon;
 
-          <li className="px-4 w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#12111c] rounded-sm font-medium">
-            <a href="https://github.com/Shazee17" className="flex justify-between items-center w-full text-gray-300">
-              Github <FaGithub size={30}/>
-            </a>
-          </li>
+                return (
+                  <li 
+                    key={index}
+                  className="px-4 w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#12111c] rounded-sm font-medium">
 
-          <li className="px-4 w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#12111c] rounded-sm font-medium">
-            <a href="/" className="flex justify-between items-center w-full text-gray-300">
-              Email <HiOutlineMail size={30}/>
-            </a>
-          </li>
+                  <a href={social.url} className="flex justify-between items-center w-full text-gray-300 hover:text-orange-500">
+                {social.name} <Icon size={30}/>
+                  </a>
+                  </li>
+                )
+              })}
 
         </ul>
       </div>
