@@ -10,7 +10,7 @@ const Skills = () => {
       <div className="max-w-[1000px] mx-auto p-8 flex flex-col justify-center w-full h-full">
         {/* Section Heading */}
         <div className="flex items-center justify-between p-8">
-          <p className="text-4xl font-bold inline">Skills</p>
+          <p className="text-4xl  text-gray-300 font-bold inline">Skills</p>
           <div className="flex-1 ml-4 h-1 bg-orange-500"></div>
         </div>
 

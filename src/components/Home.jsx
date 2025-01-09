@@ -12,7 +12,7 @@ const Home = () => {
   Shah Zaman <span className="text-xl sm:text-xl pt-11">& I'm a</span>
 </h1>
 
-        <h2 className="text-4xl sm:text-9xl font-bold text-orange-500 cursor-pointer hover:text-gray-200 duration-300">
+        <h2 className="text-4xl sm:text-8xl font-bold text-orange-500 cursor-pointer hover:text-gray-200 duration-300">
           FULLSTACK DEVELOPER.
         </h2>
         <p className="text-white py-4 max-w-[700px]">

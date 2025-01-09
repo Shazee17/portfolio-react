@@ -39,7 +39,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className={`bg-[#0d0e18] fixed w-full h-[80px] border-b-[1px] border-orange-500 flex justify-center items-center px-8 #0d0e14 text-gray-300 ${isScrolled ? 'scrolled' : ''}`}>
+    <div className={`bg-[#0d0e18] fixed w-full h-[80px] border-b-[1px] border-orange-500 flex justify-center items-center z-50 px-8 #0d0e14 text-gray-300 ${isScrolled ? 'scrolled' : ''}`}>
       <ul className="hidden md:flex">
         <li className="hover:text-orange-500">
           <Link to='home' smooth={true} duration={500}>Home</Link>
