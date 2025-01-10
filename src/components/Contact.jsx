@@ -5,12 +5,12 @@ const Contact = () => {
   return (
     <div
       name="contact"
-      className="w-full min-h-screen bg-black text-white px-8 pt-8 pb-8 md:pt-16 md:pb-16"
+      className="w-full min-h-screen bg-black  text-gray-300 px-8 pt-8 pb-8 md:pt-16 md:pb-16"
     >
       <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full">
         {/* Header */}
         <div className="flex items-center justify-between pb-8">
-          <p className="text-4xl font-bold inline text-orange-500">Contact</p>
+          <p className="text-4xl font-bold inline ">Contact</p>
           <div className="flex-1 ml-4 h-1 bg-orange-500"></div>
         </div>
 

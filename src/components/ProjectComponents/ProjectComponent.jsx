@@ -10,9 +10,9 @@ const ProjectComponent = ({ project }) => {
   };
 
   return (
-    <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-8">
+    <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-8 border-[1px] border-gray-500">
       {/* Project Details */}
-      <div className="p-6 rounded-md bg-[#474545] flex flex-col justify-between">
+      <div className="p-6 rounded-md bg-[#474545] flex flex-col">
         <h3 className="text-2xl font-bold pb-4 text-orange-500">
           {project.name}
         </h3>
@@ -42,14 +42,12 @@ const ProjectComponent = ({ project }) => {
           </div>
         </div>
 
-      
-
       </div>
 
       
 
 
-      <div>
+      <div className="p-5">
         {/* Project Images */}
       <ImageCarousel images={project.images} />
 
@@ -70,7 +68,7 @@ const ProjectComponent = ({ project }) => {
 
        {/* Project Links */}
        <p className="pt-4 text-orange-500">Links</p>
-        <ul className="flex space-x-4 pt-2">
+        <ul className="flex pt-2 ">
           {project.links.map((link, index) => {
             const Icon = link.icon 
             return (
