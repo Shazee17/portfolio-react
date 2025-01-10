@@ -8,14 +8,14 @@ const Home = () => {
       {/* Container */}
       <div className="flex flex-col justify-center h-full max-w-[1000px] mx-auto px-8">
         <p className="text-xl text-orange-500 pt-11">Heya, my name is</p>
-        <h1 className="text-4xl sm:text-7xl font-bold text-orange-500">
+        <h1 className="text-4xl sm:text-7xl font-bold text-gray-300">
   Shah Zaman <span className="text-xl sm:text-xl pt-11">& I'm a</span>
 </h1>
 
-        <h2 className="text-4xl sm:text-8xl font-bold text-orange-500 cursor-pointer hover:text-gray-200 duration-300">
+        <h2 className="text-4xl sm:text-8xl font-bold text-orange-500 cursor-pointer">
           FULLSTACK DEVELOPER.
         </h2>
-        <p className="text-white py-4 max-w-[700px]">
+        <p className="text-white text-xl py-4 max-w-[700px]">
           I specialize in building (and occasionally designing) exceptional
           digital experiences.
         </p>

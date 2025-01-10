@@ -16,10 +16,10 @@ const About = () => {
         <div className="max-w-[1000px] w-full grid px-8 sm:grid-cols-2 gap-8">
           {/* Left Section */}
           <div className="sm:text-right text-center">
-            <p className="text-3xl sm:text-4xl font-bold text-[#7a7a7a] hover:text-gray-200 duration-300">
+            <p className="text-3xl sm:text-4xl font-bold text-gray-300 duration-300">
               Graduated from <span className="text-orange-500">Sukkur IBA University</span>, majoring in Computer Science.
               <br />
-              <span className="text-orange-500">2020 - 2024</span>
+              <span className="text-orange-500 ">2020 - 2024</span>
             </p>
           </div>
 
