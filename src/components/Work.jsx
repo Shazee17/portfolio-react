@@ -24,6 +24,11 @@ const Work = () => {
     <div className="">
     <Projects />
     </div>
+
+
+    <p className="py-8 text-xl text-gray-300 text-center">
+      Check more of my work on <span className="text-orange-500"><a href="https://github.com/Shazee17">Github</a></span>
+    </p>
   </div>
 </div>
 
