@@ -1,11 +1,9 @@
-import { FaReact, FaNodeJs, FaDatabase, FaDiscord } from "react-icons/fa";
+import { FaReact, FaNodeJs, FaDatabase, FaDiscord, FaGithub } from "react-icons/fa";
 import { RiNextjsFill, RiTailwindCssFill } from "react-icons/ri";
 import { SiTypescript, SiPrisma } from "react-icons/si";
 import { GrMysql } from "react-icons/gr";
 
-
-
-import issueTracker1 from "../../assets/Issue Tracker/1.png"
+import issueTracker1 from "../../assets/Issue Tracker/1.png";
 import issueTracker2 from "../../assets/Issue Tracker/2.png";
 import issueTracker3 from "../../assets/Issue Tracker/3.png";
 
@@ -14,9 +12,10 @@ export const projectData = [
     name: "Issue Tracker",
     images: [issueTracker1, issueTracker2, issueTracker3],
     details: [
-      "An admin dashboard for managing project issues.",
-      "Features include browsing, filtering, and assigning issues.",
-      "Supports Google login for users."
+      "This application helps you efficiently manage and track project issues.",
+      "The dashboard provides an overview of issue statuses, including open, in-progress, and closed issues. It also features a bar chart for visual representation and a list of the latest issues.",
+      "The issues page allows users to browse, filter, and sort issues, view detailed information, and assign tasks to team members.",
+      "For authentication, the application supports secure Google login."
     ],
     technologies: [
       { name: "Next.js", icon: RiNextjsFill },
@@ -25,35 +24,51 @@ export const projectData = [
       { name: "mySQL", icon: GrMysql },
       { name: "Prisma", icon: SiPrisma },
     ],
+
+    links: [
+      { name: "GitHub", url: "https://github.com/Shazee17/issue-tracker-nextjs", icon: FaGithub },
+    ],
   },
+
 
   {
     name: "Issue Tracker",
     images: [issueTracker1, issueTracker2, issueTracker3],
     details: [
-      "An admin dashboard for managing project issues.",
-      "Features include browsing, filtering, and assigning issues.",
-      "Supports Google login for users."
+      "This application helps you efficiently manage and track project issues.",
+      "The dashboard provides an overview of issue statuses, including open, in-progress, and closed issues. It also features a bar chart for visual representation and a list of the latest issues.",
+      "The issues page allows users to browse, filter, and sort issues, view detailed information, and assign tasks to team members.",
+      "For authentication, the application supports secure Google login."
     ],
     technologies: [
-      { name: "Node.js", icon: FaNodeJs },
+      { name: "Node.js", icon: FaNodeJs},
       { name: "Discord.js", icon: FaDiscord },
     ],
+    links: [
+      { name: "GitHub", url: "https://github.com/Shazee17/issue-tracker-nextjs", icon: FaGithub },
+    ],
   },
+
 
   {
     name: "Issue Tracker",
     images: [issueTracker1, issueTracker2, issueTracker3],
     details: [
-      "An admin dashboard for managing project issues.",
-      "Features include browsing, filtering, and assigning issues.",
-      "Supports Google login for users."
+      "This application helps you efficiently manage and track project issues.",
+      "The dashboard provides an overview of issue statuses, including open, in-progress, and closed issues. It also features a bar chart for visual representation and a list of the latest issues.",
+      "The issues page allows users to browse, filter, and sort issues, view detailed information, and assign tasks to team members.",
+      "For authentication, the application supports secure Google login."
     ],
     technologies: [
-      { name: "React", icon: FaReact },
-      { name: "Node.js", icon: FaNodeJs },
-      { name: "MongoDB", icon: FaDatabase },
+      { name: "Next.js", icon: RiNextjsFill },
+      { name: "Typescript", icon: SiTypescript },
+      { name: "Tailwind", icon: RiTailwindCssFill },
+      { name: "mySQL", icon: GrMysql },
+      { name: "Prisma", icon: SiPrisma },
     ],
-  }
-  // Add more projects like this
+
+    links: [
+      { name: "GitHub", url: "https://github.com/Shazee17/issue-tracker-nextjs", icon: FaGithub },
+    ],
+  },
 ];
