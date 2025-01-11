@@ -76,11 +76,12 @@ const ImageCarousel = ({ images }) => {
         <div className="fixed inset-0 bg-black bg-opacity-70 flex justify-center items-center z-50">
           <div className="relative max-w-5xl w-full p-4">
             <button
-              className="absolute top-4 right-4 text-black"
+              className="absolute top-4 right-4"
               onClick={closeModal}
             >
               <MdCancel
                 size={50}
+                
               />
             </button>
             <img
